@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Login Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="label">User Login</h1>
+		<form class="login_form" action="register.html" method="post" name="form" >
+			<div class="font">Email or Phone</div>
+			<input autocomplete="off" type="text" name="email">
+			<div id="email_error">Please fill up your Email or Phone</div>
+			<div class="font font2">Password</div>
+			<input type="password" name="password">
+			<div id="pass_error">Please fill up your Password</div>
+			<a href="file:///C:/Users/Nagu%20Saran/Documents/GUVI/profile.html">Login</button></a>
+			<a href="C:\Users\Nagu Saran\Documents\GUVI\register.html">sign up</button></a>
+		</form>
+	</div>	
+	<script src="login.js"></script>
+	<script>
+        function auth(){
+            var username=document.getElementById("username").value;
+            var email=document.getElementById("email").value;
+            if(username===" "&& email===""){
+                window.location.assign("profile.html");
+                alert("Registration successful");
+            }
+            else{
+                alert("Invalid information");
+            }
+        }
+    </script>
+	
+
+</body>
+</html>
